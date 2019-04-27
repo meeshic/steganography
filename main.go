@@ -279,6 +279,9 @@ func main() {
 
 			fmt.Println()
 			fmt.Printf("Embedded the message to %s :) \n", outputFileLocation)
+			fmt.Print("Press ENTER to continue")
+			reader.ReadString('\n')
+			fmt.Println()
 
 		case "extract":
 			// read in picture & location
@@ -309,6 +312,9 @@ func main() {
 			fmt.Println()
 			fmt.Println("Extracted message is: ", extractedMessage)
 			f.Close()
+			fmt.Print("Press ENTER to continue")
+			reader.ReadString('\n')
+			fmt.Println()
 
 		case "exit":
 			fmt.Println("BYE BYE ~")
