@@ -20,7 +20,6 @@ func init() {
 	image.RegisterFormat("png", "png", png.Decode, png.DecodeConfig)
 }
 
-// Thanks to: https://medium.com/@kpbird/golang-generate-fixed-size-random-string-dd6dbd5e63c0
 func randomString(len int) string {
 	bytes := make([]byte, len)
 	for i := 0; i < len; i++ {
